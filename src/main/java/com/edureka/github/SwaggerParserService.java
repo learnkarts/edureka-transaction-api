@@ -23,7 +23,7 @@ public class SwaggerParserService {
 	public static void main(String[] args) throws FileNotFoundException {
 		SwaggerParserService klassObj = new SwaggerParserService();
 		SwaggerParser swaggerParser = new SwaggerParser();
-		String filePath = "C:\\Users\\raghugupta\\Documents\\repo\\edureka-transaction-api\\swagger.json";
+		String filePath = "C:\\Users\\Documents\\repo\\edureka-transaction-api\\swagger.json";
 		Swagger swagger = klassObj.validateValidSwaggerFile(swaggerParser,
 				klassObj.getDataFromFile(new FileInputStream(new File(filePath))));
 		logger.info("Swagger details = {} ", swagger);
